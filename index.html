@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="file" id="folder-selector" webkitdirectory directory multiple style="display: none;">
+        <button id="select-folder-btn">Select Folder</button>
+        <div class="video-list">
+            <h2 id="folder-name">Videos in Selected Folder</h2>
+            <ul id="video-list">
+                <!-- Videos will be listed here dynamically -->
+            </ul>
+        </div>
+        <div class="video-player">
+            <video id="video-player" controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background for dark mode */
+    color: #fff; /* Light text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#select-folder-btn {
+    padding: 10px 20px;
+    background-color: #1e272e; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#select-folder-btn:hover {
+    background-color: #d2dae2; /* Darker green */
+}
+
+.video-list {
+    flex: 1;
+    padding: 20px;
+}
+
+#folder-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+li:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+.video-player {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 10px; /* Rounded border */
+    overflow: hidden; /* Ensure rounded corners are applied */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-left: 20px; /* Add margin to separate from video list */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Black background */
+    border-radius: 10px; /* Rounded border for video */
+}
+
+/* Additional styles for YouTube-like player controls */
+.video-player-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.video-player-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.video-player-controls button:hover {
+    color: #aaa; /* Lighter color on hover */
+}
+
+.red-border{
+    border-top: 5px red solid;
+    transform: rotate(0%);
+}
